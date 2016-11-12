@@ -10,8 +10,10 @@
 			grub.device = "/dev/sda1";
 			timeout = 1;
 		};
-	consoleLogLevel = 0;
+		consoleLogLevel = 1;
 	};
+
+	hardware.pulseaudio.enable = true;
 
 	networking = {
 		hostName = "cortys";
@@ -45,6 +47,7 @@
 		roboto
 		i3status
 		i3lock
+		pasystray
 	];
 
 	programs = {
