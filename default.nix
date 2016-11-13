@@ -1,6 +1,5 @@
 { config, pkgs, ... }: {
 	imports = [
-		./hardware-configuration.nix
 		./users.nix
 		./desktop.nix
 		./fonts.nix
