@@ -12,7 +12,7 @@
 		loader = {
 			systemd-boot.enable = true;
 			grub.device = "/dev/sda1";
-			timeout = 0;
+			timeout = 1;
 		};
 		consoleLogLevel = 1;
 	};
