@@ -22,9 +22,12 @@ in {
 		i3status
 		i3lock
 		pasystray
+		arc-gtk-theme
 	];
 
 	programs = {
 		zsh.enable = true;
 	};
+
+	virtualisation.virtualbox.host.enable = true;
 }
