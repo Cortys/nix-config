@@ -4,6 +4,7 @@ in {
 	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [
 		wget
+		unzip
 		nano
 		gparted
 		termite
@@ -14,6 +15,7 @@ in {
 		nodejs
 		php
 		git
+		gradle
 		networkmanager
 		networkmanagerapplet
 		pcmanfm
@@ -23,6 +25,7 @@ in {
 		i3lock
 		pasystray
 		arc-gtk-theme
+		blender
 	];
 
 	programs = {
