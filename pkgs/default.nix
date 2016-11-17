@@ -26,6 +26,8 @@ in {
 		pasystray
 		arc-gtk-theme
 		blender
+		lastpass-cli
+		patchelf
 	];
 
 	programs = {

@@ -45,6 +45,8 @@
 
 		# SVG loader for pixbuf (needed for GTK svg icon themes)
 		export GDK_PIXBUF_MODULE_FILE=$(echo ${pkgs.librsvg.out}/lib/gdk-pixbuf-2.0/*/loaders.cache)
+
+		export LD_LIBRARY_PATH=$HOME/.nix-profile/lib:/run/current-system/sw/lib:$LD_LIBRARY_PATH
 	'';
 
 	environment.etc."xdg/gtk-3.0/settings.ini" = {
