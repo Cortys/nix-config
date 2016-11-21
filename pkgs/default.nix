@@ -28,6 +28,8 @@ in {
 		blender
 		lastpass-cli
 		patchelf
+		scrot
+		kde5.gwenview
 	];
 
 	programs = {
