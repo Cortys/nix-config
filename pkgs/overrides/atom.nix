@@ -1,10 +1,10 @@
 { stdenv, fetchurl, lib, makeWrapper, gvfs, atomEnv, libXScrnSaver, libxkbfile, ... }: rec {
 	name = "atom-${version}";
-	version = "1.12.2";
+	version = "1.12.6";
 
 	src = fetchurl {
 		url = "https://github.com/atom/atom/releases/download/v${version}/atom-amd64.deb";
-		sha256 = "03kznbxfxyjq9fqq1jvq3gvvy50dz3wqvn098n9k9gv8x3595mw4";
+		sha256 = "0b85bjfxdd18i2v8py5jx4284m58zxad38c2vvqhgx7cxm9hn8k6";
 		name = "${name}.deb";
 	};
 
