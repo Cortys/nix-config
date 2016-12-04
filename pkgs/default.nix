@@ -30,6 +30,7 @@ in {
 		patchelf
 		scrot
 		kde5.gwenview
+		xorg.xbacklight
 	];
 
 	programs = {
