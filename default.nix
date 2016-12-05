@@ -37,4 +37,7 @@
 		autoUpgrade.channel = https://nixos.org/channels/nixos-16.09;
 		stateVersion = "16.09";
 	};
+
+	services.acpid.enable = true;
+	powerManagement.enable = true;
 }

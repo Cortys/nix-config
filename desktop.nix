@@ -57,4 +57,7 @@
 		'';
 		mode = "444";
 	};
+
+
+	services.acpid.lidEventCommands = "i3lock";
 }

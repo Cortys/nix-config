@@ -31,6 +31,7 @@ in {
 		scrot
 		kde5.gwenview
 		xorg.xbacklight
+		xorg.xev
 	];
 
 	programs = {
