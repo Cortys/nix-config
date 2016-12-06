@@ -32,6 +32,7 @@ in {
 		kde5.gwenview
 		xorg.xbacklight
 		xorg.xev
+		texlive.combined.scheme-full
 	];
 
 	programs = {
