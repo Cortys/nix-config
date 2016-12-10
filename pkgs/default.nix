@@ -26,6 +26,7 @@ in {
 		pasystray
 		arc-gtk-theme
 		blender
+		gimp
 		lastpass-cli
 		patchelf
 		scrot
