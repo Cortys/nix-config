@@ -58,6 +58,13 @@
 		mode = "444";
 	};
 
+	environment.etc."gtk-2.0/gtkrc" = {
+		text = ''
+			gtk-icon-theme-name = "Arc-Dark"
+		'';
+		mode = "444";
+	};
+
 
 	services.acpid.lidEventCommands = "i3lock";
 }

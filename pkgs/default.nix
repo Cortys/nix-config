@@ -2,6 +2,7 @@
 let override = old: new: pkgs.stdenv.lib.overrideDerivation old (args: new (pkgs // pkgs.xorg));
 in {
 	nixpkgs.config.allowUnfree = true;
+
 	environment.systemPackages = with pkgs; [
 		wget
 		unzip
@@ -9,10 +10,12 @@ in {
 		gparted
 		termite
 		(override atom (import ./overrides/atom.nix))
+		# (import ./gitkraken)
 		eclipses.eclipse-sdk-46
 		vlc
 		google-chrome
-		nodejs
+		nodejs-6_x
+		npm2nix
 		php
 		git
 		gradle
@@ -23,6 +26,7 @@ in {
 		dropbox-cli
 		i3status
 		i3lock
+		bar
 		pasystray
 		arc-gtk-theme
 		blender
@@ -33,6 +37,7 @@ in {
 		xorg.xbacklight
 		xorg.xev
 		texlive.combined.scheme-full
+		transmission_gtk
 	];
 
 	programs = {
