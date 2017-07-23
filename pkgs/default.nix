@@ -9,16 +9,24 @@ in {
 		nano
 		gparted
 		termite
+		fam
+		lxqt.lxqt-sudo
 		(override atom (import ./overrides/atom.nix))
-		# (import ./gitkraken)
+		(override gitkraken (import ./overrides/gitkraken.nix))
+		(override staruml (import ./overrides/staruml.nix))
 		eclipses.eclipse-sdk-46
 		vlc
+		mpv
+		rhythmbox
 		google-chrome
-		nodejs-6_x
+		nodejs-7_x
 		npm2nix
 		php
 		git
 		gradle
+		leiningen
+		maven
+		h2
 		networkmanager
 		networkmanagerapplet
 		pcmanfm
@@ -28,17 +36,31 @@ in {
 		i3lock
 		bar
 		pasystray
-		arc-gtk-theme
+		arc-theme
+		arc-icon-theme
+		breeze-icons
+		gnome3.adwaita-icon-theme
 		blender
 		gimp
+		inkscape
+		umlet
 		lastpass-cli
 		patchelf
 		scrot
-		kde5.gwenview
+		gwenview
 		xorg.xbacklight
 		xorg.xev
 		texlive.combined.scheme-full
 		transmission_gtk
+		compton
+		feh
+		libreoffice
+		ranger
+		udiskie
+		unrar
+		gnumake
+		openjdk
+		qpdfview
 	];
 
 	programs = {
