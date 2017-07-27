@@ -18,7 +18,10 @@ in {
 		vlc
 		mpv
 		rhythmbox
+		kdenlive
+		frei0r
 		google-chrome
+		firefox
 		nodejs-7_x
 		npm2nix
 		php

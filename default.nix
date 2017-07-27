@@ -7,8 +7,8 @@
 	];
 
 	boot = {
-		kernelPackages = pkgs.linuxPackages_4_8;
-		supportedFilesystems = [ "exfat" ];
+		kernelPackages = pkgs.linuxPackages_4_12;
+		supportedFilesystems = [ "exfat" "ntfs" ];
 		loader = {
 			systemd-boot.enable = true;
 			grub.device = "/dev/sda1";
@@ -34,10 +34,9 @@
 
 	system = {
 		autoUpgrade.enable = true;
-		autoUpgrade.channel = https://nixos.org/channels/nixos-16.09;
-		stateVersion = "16.09";
+		autoUpgrade.channel = https://nixos.org/channels/nixos-17.03;
+		stateVersion = "17.03";
 	};
 
-	services.acpid.enable = true;
 	powerManagement.enable = true;
 }

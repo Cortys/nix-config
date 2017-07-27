@@ -6,6 +6,8 @@
 			noto-fonts
 			noto-fonts-emoji
 			meslo-lg
+			terminus_font
+			terminus_font_ttf
 		];
 		fontconfig = {
 			ultimate = {
